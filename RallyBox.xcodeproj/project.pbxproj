@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		565156162BF2C0220096E6E0 /* RallyBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156152BF2C0220096E6E0 /* RallyBoxApp.swift */; };
-		565156182BF2C0220096E6E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156172BF2C0220096E6E0 /* ContentView.swift */; };
+		565156182BF2C0220096E6E0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156172BF2C0220096E6E0 /* MainView.swift */; };
 		5651561A2BF2C0240096E6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565156192BF2C0240096E6E0 /* Assets.xcassets */; };
 		5651561D2BF2C0240096E6E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5651561C2BF2C0240096E6E0 /* Preview Assets.xcassets */; };
+		565156292BF2CA500096E6E0 /* RouteBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156282BF2CA500096E6E0 /* RouteBookView.swift */; };
+		5651562B2BF2CA8E0096E6E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562A2BF2CA8E0096E6E0 /* SettingsView.swift */; };
+		5651562D2BF2CAB80096E6E0 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562C2BF2CAB80096E6E0 /* NavigatorView.swift */; };
+		5651562F2BF2CB3D0096E6E0 /* ToolBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562E2BF2CB3D0096E6E0 /* ToolBoxView.swift */; };
+		565156312BF2CBDD0096E6E0 /* RouteBookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */; };
+		565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156322BF2CBEF0096E6E0 /* RouteBook.swift */; };
+		565156352BF2D7100096E6E0 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156342BF2D7100096E6E0 /* MainHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		565156122BF2C0220096E6E0 /* RallyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RallyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565156152BF2C0220096E6E0 /* RallyBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RallyBoxApp.swift; sourceTree = "<group>"; };
-		565156172BF2C0220096E6E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		565156172BF2C0220096E6E0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		565156192BF2C0240096E6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5651561C2BF2C0240096E6E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		565156282BF2CA500096E6E0 /* RouteBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookView.swift; sourceTree = "<group>"; };
+		5651562A2BF2CA8E0096E6E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5651562C2BF2CAB80096E6E0 /* NavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
+		5651562E2BF2CB3D0096E6E0 /* ToolBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxView.swift; sourceTree = "<group>"; };
+		565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookItem.swift; sourceTree = "<group>"; };
+		565156322BF2CBEF0096E6E0 /* RouteBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBook.swift; sourceTree = "<group>"; };
+		565156342BF2D7100096E6E0 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,10 @@
 		565156142BF2C0220096E6E0 /* RallyBox */ = {
 			isa = PBXGroup;
 			children = (
-				565156152BF2C0220096E6E0 /* RallyBoxApp.swift */,
-				565156172BF2C0220096E6E0 /* ContentView.swift */,
-				565156192BF2C0240096E6E0 /* Assets.xcassets */,
+				565156272BF2C8110096E6E0 /* Other */,
+				565156252BF2C7F80096E6E0 /* Models */,
+				565156242BF2C7F00096E6E0 /* ViewModels */,
+				565156232BF2C7E40096E6E0 /* Views */,
 				5651561B2BF2C0240096E6E0 /* Preview Content */,
 			);
 			path = RallyBox;
@@ -65,6 +80,52 @@
 				5651561C2BF2C0240096E6E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		565156232BF2C7E40096E6E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				565156362BF2D7610096E6E0 /* Components */,
+				565156172BF2C0220096E6E0 /* MainView.swift */,
+				5651562E2BF2CB3D0096E6E0 /* ToolBoxView.swift */,
+				565156282BF2CA500096E6E0 /* RouteBookView.swift */,
+				5651562A2BF2CA8E0096E6E0 /* SettingsView.swift */,
+				5651562C2BF2CAB80096E6E0 /* NavigatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		565156242BF2C7F00096E6E0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		565156252BF2C7F80096E6E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */,
+				565156322BF2CBEF0096E6E0 /* RouteBook.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		565156272BF2C8110096E6E0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				565156152BF2C0220096E6E0 /* RallyBoxApp.swift */,
+				565156192BF2C0240096E6E0 /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		565156362BF2D7610096E6E0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				565156342BF2D7100096E6E0 /* MainHeaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565156182BF2C0220096E6E0 /* ContentView.swift in Sources */,
+				5651562F2BF2CB3D0096E6E0 /* ToolBoxView.swift in Sources */,
+				565156312BF2CBDD0096E6E0 /* RouteBookItem.swift in Sources */,
+				5651562D2BF2CAB80096E6E0 /* NavigatorView.swift in Sources */,
+				565156292BF2CA500096E6E0 /* RouteBookView.swift in Sources */,
+				565156352BF2D7100096E6E0 /* MainHeaderView.swift in Sources */,
+				565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */,
+				5651562B2BF2CA8E0096E6E0 /* SettingsView.swift in Sources */,
+				565156182BF2C0220096E6E0 /* MainView.swift in Sources */,
 				565156162BF2C0220096E6E0 /* RallyBoxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +342,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RallyBox/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RallyBox;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +370,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RallyBox/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RallyBox;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
