@@ -10,8 +10,8 @@ import SwiftUI
 struct MainMenuView: View {
     var body: some View {
         VStack(spacing: 20) {
-            Button {
-                // Action
+            NavigationLink {
+                NavigationView()
             }
             label: {
                 ZStack {
@@ -24,8 +24,8 @@ struct MainMenuView: View {
                 }
             }
 
-            Button {
-                // Action
+            NavigationLink {
+                RouteBookView()
             }
             label: {
                 ZStack {
@@ -38,8 +38,8 @@ struct MainMenuView: View {
                 }
             }
 
-            Button {
-                // Action
+            NavigationLink {
+                ToolBoxView()
             }
             label: {
                 ZStack {
@@ -52,8 +52,8 @@ struct MainMenuView: View {
                 }
             }
 
-            Button {
-                // Action
+            NavigationLink {
+                SettingsView()
             }
             label: {
                 ZStack {

@@ -9,16 +9,18 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack {
-            MainHeaderView()
-                .offset(y: -150)
+        NavigationStack {
+            VStack {
+                MainHeaderView()
+                    .offset(y: -150)
 
-            Spacer()
+                Spacer()
 
-            MainMenuView()
-                .offset(y: -60)
+                MainMenuView()
+                    .offset(y: -60)
 
-            Spacer()
+                Spacer()
+            }
         }
     }
 }

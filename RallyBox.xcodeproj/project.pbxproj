@@ -13,7 +13,7 @@
 		5651561D2BF2C0240096E6E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5651561C2BF2C0240096E6E0 /* Preview Assets.xcassets */; };
 		565156292BF2CA500096E6E0 /* RouteBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156282BF2CA500096E6E0 /* RouteBookView.swift */; };
 		5651562B2BF2CA8E0096E6E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562A2BF2CA8E0096E6E0 /* SettingsView.swift */; };
-		5651562D2BF2CAB80096E6E0 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562C2BF2CAB80096E6E0 /* NavigatorView.swift */; };
+		5651562D2BF2CAB80096E6E0 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562C2BF2CAB80096E6E0 /* NavigationView.swift */; };
 		5651562F2BF2CB3D0096E6E0 /* ToolBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651562E2BF2CB3D0096E6E0 /* ToolBoxView.swift */; };
 		565156312BF2CBDD0096E6E0 /* RouteBookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */; };
 		565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156322BF2CBEF0096E6E0 /* RouteBook.swift */; };
@@ -29,7 +29,7 @@
 		5651561C2BF2C0240096E6E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		565156282BF2CA500096E6E0 /* RouteBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookView.swift; sourceTree = "<group>"; };
 		5651562A2BF2CA8E0096E6E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		5651562C2BF2CAB80096E6E0 /* NavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
+		5651562C2BF2CAB80096E6E0 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		5651562E2BF2CB3D0096E6E0 /* ToolBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxView.swift; sourceTree = "<group>"; };
 		565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookItem.swift; sourceTree = "<group>"; };
 		565156322BF2CBEF0096E6E0 /* RouteBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBook.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				5651562E2BF2CB3D0096E6E0 /* ToolBoxView.swift */,
 				565156282BF2CA500096E6E0 /* RouteBookView.swift */,
 				5651562A2BF2CA8E0096E6E0 /* SettingsView.swift */,
-				5651562C2BF2CAB80096E6E0 /* NavigatorView.swift */,
+				5651562C2BF2CAB80096E6E0 /* NavigationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 				565156382BF35AEA0096E6E0 /* MainMenuView.swift in Sources */,
 				5651562F2BF2CB3D0096E6E0 /* ToolBoxView.swift in Sources */,
 				565156312BF2CBDD0096E6E0 /* RouteBookItem.swift in Sources */,
-				5651562D2BF2CAB80096E6E0 /* NavigatorView.swift in Sources */,
+				5651562D2BF2CAB80096E6E0 /* NavigationView.swift in Sources */,
 				565156292BF2CA500096E6E0 /* RouteBookView.swift in Sources */,
 				565156352BF2D7100096E6E0 /* MainHeaderView.swift in Sources */,
 				565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */,
