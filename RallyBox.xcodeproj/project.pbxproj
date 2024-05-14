@@ -18,6 +18,7 @@
 		565156312BF2CBDD0096E6E0 /* RouteBookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */; };
 		565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156322BF2CBEF0096E6E0 /* RouteBook.swift */; };
 		565156352BF2D7100096E6E0 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156342BF2D7100096E6E0 /* MainHeaderView.swift */; };
+		565156382BF35AEA0096E6E0 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156372BF35AEA0096E6E0 /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		565156302BF2CBDD0096E6E0 /* RouteBookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookItem.swift; sourceTree = "<group>"; };
 		565156322BF2CBEF0096E6E0 /* RouteBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBook.swift; sourceTree = "<group>"; };
 		565156342BF2D7100096E6E0 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		565156372BF35AEA0096E6E0 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				565156342BF2D7100096E6E0 /* MainHeaderView.swift */,
+				565156372BF35AEA0096E6E0 /* MainMenuView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565156382BF35AEA0096E6E0 /* MainMenuView.swift in Sources */,
 				5651562F2BF2CB3D0096E6E0 /* ToolBoxView.swift in Sources */,
 				565156312BF2CBDD0096E6E0 /* RouteBookItem.swift in Sources */,
 				5651562D2BF2CAB80096E6E0 /* NavigatorView.swift in Sources */,
