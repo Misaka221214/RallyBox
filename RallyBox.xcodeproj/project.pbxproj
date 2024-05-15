@@ -19,6 +19,9 @@
 		565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156322BF2CBEF0096E6E0 /* RouteBook.swift */; };
 		565156352BF2D7100096E6E0 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156342BF2D7100096E6E0 /* MainHeaderView.swift */; };
 		565156382BF35AEA0096E6E0 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156372BF35AEA0096E6E0 /* MainMenuView.swift */; };
+		5651563A2BF47DFD0096E6E0 /* RouteBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565156392BF47DFD0096E6E0 /* RouteBookViewModel.swift */; };
+		5651563C2BF47E780096E6E0 /* RouteBookItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651563B2BF47E780096E6E0 /* RouteBookItemViewModel.swift */; };
+		5651563E2BF487ED0096E6E0 /* RouteBookItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651563D2BF487ED0096E6E0 /* RouteBookItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		565156322BF2CBEF0096E6E0 /* RouteBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBook.swift; sourceTree = "<group>"; };
 		565156342BF2D7100096E6E0 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		565156372BF35AEA0096E6E0 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		565156392BF47DFD0096E6E0 /* RouteBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookViewModel.swift; sourceTree = "<group>"; };
+		5651563B2BF47E780096E6E0 /* RouteBookItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookItemViewModel.swift; sourceTree = "<group>"; };
+		5651563D2BF487ED0096E6E0 /* RouteBookItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 		565156242BF2C7F00096E6E0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				565156392BF47DFD0096E6E0 /* RouteBookViewModel.swift */,
+				5651563B2BF47E780096E6E0 /* RouteBookItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			children = (
 				565156342BF2D7100096E6E0 /* MainHeaderView.swift */,
 				565156372BF35AEA0096E6E0 /* MainMenuView.swift */,
+				5651563D2BF487ED0096E6E0 /* RouteBookItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -207,7 +216,10 @@
 				5651562D2BF2CAB80096E6E0 /* NavigationView.swift in Sources */,
 				565156292BF2CA500096E6E0 /* RouteBookView.swift in Sources */,
 				565156352BF2D7100096E6E0 /* MainHeaderView.swift in Sources */,
+				5651563A2BF47DFD0096E6E0 /* RouteBookViewModel.swift in Sources */,
+				5651563E2BF487ED0096E6E0 /* RouteBookItemView.swift in Sources */,
 				565156332BF2CBEF0096E6E0 /* RouteBook.swift in Sources */,
+				5651563C2BF47E780096E6E0 /* RouteBookItemViewModel.swift in Sources */,
 				5651562B2BF2CA8E0096E6E0 /* SettingsView.swift in Sources */,
 				565156182BF2C0220096E6E0 /* MainView.swift in Sources */,
 				565156162BF2C0220096E6E0 /* RallyBoxApp.swift in Sources */,
