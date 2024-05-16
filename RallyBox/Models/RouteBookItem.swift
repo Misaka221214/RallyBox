@@ -9,14 +9,14 @@ import Foundation
 
 struct RouteBookItem: Hashable, Identifiable {
     var id: String {
-        self.endDistance + self.speed
+        String(self.startDistance) + String(self.endDistance) + String(self.speed)
     }
 
-    var startDistance: String
-    var endDistance: String
-    var startTime: String
-    var endTime: String
-    var speed: String
+    var startDistance: Double
+    var endDistance: Double
+    var startTime: Date
+    var endTime: Date // arrival time
+    var speed: Double
     var pause: Bool
-    var duration: String
+    var duration: Double // in second
 }

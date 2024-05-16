@@ -10,5 +10,5 @@ import Foundation
 struct RouteBook: Hashable {
     var items: [RouteBookItem]
     var name: String
-    var startTime: String
+    var startTime: Date
 }

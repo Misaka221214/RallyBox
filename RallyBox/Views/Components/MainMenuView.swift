@@ -25,7 +25,7 @@ struct MainMenuView: View {
             }
 
             NavigationLink {
-                RouteBookView(endDistance: "", speed: "")
+                RouteBookView(endDistance: 0, speed: 0, startTime: Date.now)
             }
             label: {
                 ZStack {
