@@ -10,6 +10,10 @@ import Foundation
 class RouteBookViewModel: ObservableObject {
     @Published var routeBook: RouteBook = .init(items: [], name: "", startTime: Date.now)
 
+    init(routeBook: RouteBook) {
+        self.routeBook = routeBook
+    }
+
     init() {}
 
     func getDistanceByIndex(index: Int) -> Double {

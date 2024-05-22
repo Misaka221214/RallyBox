@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct RouteBook: Hashable {
+struct RouteBook: Hashable, Codable, Identifiable {
+    var id = UUID()
+
     var items: [RouteBookItem]
     var name: String
     var startTime: Date

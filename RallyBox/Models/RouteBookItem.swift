@@ -7,10 +7,8 @@
 
 import Foundation
 
-struct RouteBookItem: Hashable, Identifiable {
-    var id: String {
-        String(self.startDistance) + String(self.endDistance) + String(self.speed)
-    }
+struct RouteBookItem: Hashable, Identifiable, Codable {
+    var id = UUID()
 
     var startDistance: Double
     var endDistance: Double
