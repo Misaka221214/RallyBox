@@ -8,6 +8,44 @@
 import SwiftUI
 
 struct MainMenuView: View {
+    @StateObject private var store = RouteBookStore()
+    
+    func loadAction() {
+        print("reload!")
+        Task {
+            do {
+                try await store.load()
+            } catch {
+                fatalError("Loading Error!")
+            }
+        }
+    }
+
+    func saveAction(routeBook: RouteBook, index: Int) {
+        var routeBooks = store.routeBooks
+
+        if routeBooks.count == 0 {
+            routeBooks = [routeBook]
+        }
+
+        if index < routeBooks.count {
+            routeBooks[index] = routeBook
+        }
+
+        if index >= routeBooks.count {
+            routeBooks.append(routeBook)
+        }
+
+        Task {
+            do {
+                try await store.save(routeBooksData: routeBooks)
+                
+            } catch {
+                fatalError("Save Error!")
+            }
+        }
+    }
+
     var body: some View {
         VStack(spacing: 20) {
             NavigationLink {
@@ -25,7 +63,7 @@ struct MainMenuView: View {
             }
 
             NavigationLink {
-                RouteBookView(endDistance: 0, speed: 0, startTime: Date.now)
+                RouteBookMenuView(viewModel: RouteBookMenuViewModel(routeBooks: store.routeBooks), saveAction: saveAction, loadAction: loadAction)
             }
             label: {
                 ZStack {
@@ -36,6 +74,9 @@ struct MainMenuView: View {
                     Text("Route Book")
                         .foregroundColor(Color.white).bold()
                 }
+            }
+            .onAppear {
+                loadAction()
             }
 
             NavigationLink {
