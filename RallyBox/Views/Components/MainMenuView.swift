@@ -9,9 +9,8 @@ import SwiftUI
 
 struct MainMenuView: View {
     @StateObject private var store = RouteBookStore()
-    
-    func loadAction() {
-        print("reload!")
+
+    func loadAction() -> [RouteBook] {
         Task {
             do {
                 try await store.load()
@@ -19,6 +18,8 @@ struct MainMenuView: View {
                 fatalError("Loading Error!")
             }
         }
+
+        return store.routeBooks
     }
 
     func saveAction(routeBook: RouteBook, index: Int) {
@@ -39,7 +40,7 @@ struct MainMenuView: View {
         Task {
             do {
                 try await store.save(routeBooksData: routeBooks)
-                
+
             } catch {
                 fatalError("Save Error!")
             }
@@ -63,7 +64,7 @@ struct MainMenuView: View {
             }
 
             NavigationLink {
-                RouteBookMenuView(viewModel: RouteBookMenuViewModel(routeBooks: store.routeBooks), saveAction: saveAction, loadAction: loadAction)
+                RouteBookMenuView(viewModel: RouteBookMenuViewModel(routeBooks: store.routeBooks, load: loadAction), saveAction: saveAction, loadAction: loadAction)
             }
             label: {
                 ZStack {
@@ -76,7 +77,7 @@ struct MainMenuView: View {
                 }
             }
             .onAppear {
-                loadAction()
+                _ = loadAction()
             }
 
             NavigationLink {

@@ -10,7 +10,7 @@ import SwiftUI
 struct RouteBookMenuView: View {
     @StateObject var viewModel: RouteBookMenuViewModel
     let saveAction: (RouteBook, Int) -> Void
-    let loadAction: () -> Void
+    let loadAction: () -> [RouteBook]
 
     var body: some View {
         VStack {
@@ -30,8 +30,10 @@ struct RouteBookMenuView: View {
                             .foregroundColor(Color.white).bold()
                     }
                 }
-                .onDisappear {
-                    loadAction()
+                .onAppear {
+                    viewModel.updateModel()
+                    print("Appear")
+                    print(viewModel.routeBooks)
                 }
             }
 
@@ -51,8 +53,8 @@ struct RouteBookMenuView: View {
                                     .foregroundColor(Color.white).bold()
                             }
                         }
-                        .onDisappear {
-                            loadAction()
+                        .onAppear {
+                            viewModel.updateModel()
                         }
                     }
                 }
@@ -62,5 +64,5 @@ struct RouteBookMenuView: View {
 }
 
 #Preview {
-    RouteBookMenuView(viewModel: RouteBookMenuViewModel(), saveAction: { _, _ in }, loadAction: {})
+    RouteBookMenuView(viewModel: RouteBookMenuViewModel(), saveAction: { _, _ in }, loadAction: { [] })
 }

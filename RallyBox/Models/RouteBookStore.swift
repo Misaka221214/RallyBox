@@ -38,5 +38,6 @@ class RouteBookStore: ObservableObject {
             try data.write(to: outfile)
         }
         _ = try await task.value
+        self.routeBooks = routeBooksData
     }
 }
