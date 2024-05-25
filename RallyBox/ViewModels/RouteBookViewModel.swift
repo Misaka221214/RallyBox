@@ -58,13 +58,8 @@ class RouteBookViewModel: ObservableObject {
     }
 
     func updateStartTime(startTime: Date) {
-        print("CALL")
-        print(startTime)
-        print(routeBook.startTime)
         routeBook.startTime = startTime
         calculateRouteBook()
-        print(routeBook.startTime)
-        print("DONE")
     }
 
     func addItem(endDistance: Double, speed: Double, index: Int) {
